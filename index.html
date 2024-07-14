@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="scriptStandarCyP.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Est Discretas 1</title>
+</head>
+
+<body>
+    <header>
+        <h1>Calculadora estadística</h1>
+    </header>
+    <main>
+        <div class="tabs">
+            <ul class="nav nav-pills">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="index.html" style="color: black;">Combinación/Permutación</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="pmrepetido.html" style="color: black;">Permutación con elementos repetidos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="pmcircular.html" style="color: black;">Permutación circular</a>
+                </li>
+            </ul>
+        </div>
+        <div class="calculator">
+            <form>
+                <div class="input-container">
+                    <label for="n">Valor de N</label>
+                    <input type="number" id="n">
+                </div>
+                <div class="input-container">
+                    <label for="k">Valor de K</label>
+                    <input type="number" id="k">
+                </div>
+                <div class="btn-container">
+                    <button id="btn-combine" class="btn" type="button" style="color: white;">Calcular Combinatoria</button>
+                    <button id="btn-permutate" class="btn" type="button" style="color: white;">Calcular Permutaciones</button>
+                </div>
+            </form>
+            <div class="result">
+                <p>Resultado:</p>
+                <p id="calc-result"></p>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
